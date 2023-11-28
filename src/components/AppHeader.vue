@@ -1,8 +1,10 @@
 <script>
+
 export default {
     name: "AppHeader",
     data() {
         return {
+
             headerLinks: [
                 {
                     text: "CHARACTERS",
