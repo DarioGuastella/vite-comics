@@ -56,7 +56,8 @@ export default {
         <img class="p-4" src="../assets/img/dc-logo.png" alt="">
         <!-- navigatore -->
         <nav class="d-flex align-items-center">
-            <a class="mx-3" v-for="link in headerLinks" :href="link.url">{{ link.text }}</a>
+            <a class="mx-3" v-for="link in headerLinks" :class="link.text == 'COMICS' ? 'active' : ''" :href="link.url">{{
+                link.text }}</a>
         </nav>
     </header>
 </template>
@@ -65,5 +66,11 @@ nav a {
     text-decoration: none;
     color: #555;
     font-weight: 600;
+}
+
+.active {
+    color: #0282f9;
+    border-bottom: 5px solid #0282f9;
+    line-height: 10;
 }
 </style>
