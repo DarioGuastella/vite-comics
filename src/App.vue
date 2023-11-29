@@ -1,12 +1,16 @@
 <script>
 import AppHeader from "./components/AppHeader.vue"
-import AppMain from "./components/AppMain.vue"
 import AppFooter from "./components/AppFooter.vue"
+import AppBuySection from "./components/AppBuySection.vue"
+import AppJumbo from "./components/AppJumbo.vue"
+import AppComics from "./components/AppComics.vue"
 export default {
   components: {
     AppHeader,
-    AppMain,
     AppFooter,
+    AppBuySection,
+    AppJumbo,
+    AppComics
   },
   data() {
     return {
@@ -92,8 +96,28 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain />
+  <main>
+    <section>
+      <AppJumbo />
+      <div class="container">
+        <AppComics :products="comicsList" />
+
+      </div>
+    </section>
+    <AppBuySection />
+  </main>
+
   <AppFooter />
 </template>
 
-<style scoped></style>
+<style scoped>
+section {
+  background-color: #222;
+  color: white;
+}
+
+div h3 {
+  padding: 3rem;
+  margin: 0;
+}
+</style>
