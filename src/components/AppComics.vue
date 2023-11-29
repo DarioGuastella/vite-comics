@@ -11,12 +11,17 @@ export default {
 </script>
 
 <template>
-    <section>
-        <h2>{{ titolo }}</h2>
+    <section class="container">
         <div id="cardsWrapper">
             <AppComicsCard v-for="prodotto in products" :product="prodotto" />
         </div>
     </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+#cardsWrapper {
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+</style>

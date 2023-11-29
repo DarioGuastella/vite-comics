@@ -101,7 +101,6 @@ export default {
       <AppJumbo />
       <div class="container">
         <AppComics :products="comicsList" />
-
       </div>
     </section>
     <AppBuySection />
