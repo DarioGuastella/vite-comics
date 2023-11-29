@@ -1,14 +1,19 @@
 <script>
-import AppBuySection from "../components/AppBuySection.vue"
+import AppBuySection from "./AppBuySection.vue"
+import AppJumbo from "./AppJumbo.vue"
 export default {
     components: {
-        AppBuySection
+        AppBuySection,
+        AppJumbo
     },
 
 }
 </script>
 <template>
     <section>
+        <div id="jumbotron">
+            <AppJumbo />
+        </div>
         <div class="container">
             <h3> --Content goes here-- </h3>
         </div>
@@ -17,12 +22,16 @@ export default {
 </template>
 <style scoped>
 section {
-    background-color: black;
+    background-color: #222;
     color: white;
 }
 
 div h3 {
     padding: 3rem;
     margin: 0;
+}
+
+#jumbotron {
+    height: 25rem;
 }
 </style>
