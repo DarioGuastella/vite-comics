@@ -11,9 +11,7 @@ export default {
 </script>
 <template>
     <section>
-        <div id="jumbotron">
-            <AppJumbo />
-        </div>
+        <AppJumbo />
         <div class="container">
             <h3> --Content goes here-- </h3>
         </div>
@@ -29,9 +27,5 @@ section {
 div h3 {
     padding: 3rem;
     margin: 0;
-}
-
-#jumbotron {
-    height: 25rem;
 }
 </style>
