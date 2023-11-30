@@ -68,6 +68,11 @@ nav a {
     font-weight: 600;
 }
 
+img {
+    width: 165px;
+    height: 165px;
+}
+
 .active {
     color: #0282f9;
     border-bottom: 5px solid #0282f9;
